@@ -11,10 +11,25 @@ body{
   margin: 20px;
 
 }
-.container{
+.MainContainer{
+  margin-top: 3%;
+  margin-left: 1%;
+  margin-right: 1%;
   display:grid;
-  grid-template-columns: 20% 50% 10%;
-  grid-template-rows: 40%;
+  grid-template-columns: 20% 60% 20%;
+  
+}
+
+.OptionsContainer{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+
+.columna{
+  
+  margin-left: 20%;
+  margin-right: 20%;
 }
 .item{
   background-color: aquamarine;
@@ -31,25 +46,38 @@ body{
 
 <h1>Imagen</h1>
 <p>
-  dewdewd
+  
 </p>
 
 </section>
-
-<section class="container">
-
-  <div class="item"> Imagen Principal</div>
-  <div class="item">contenido #2</div>
-  <div class="item">contenido #3</div>
-  <div class="item">contenido #4</div>
-  <div class="item">contenido #5</div>
-  <div class="item">contenido #6</div>
-  <div class="item">contenido #7</div>
-  <div class="item">contenido #8</div>
-  <div class="item">contenido #9</div>
-  <div class="item">contenido #10</div>
-  <div class="item">contenido #11</div>
-  <div class="item">contenido #12</div>
-
-
+<section class="OptionsContainer">
+  <div class="columna">
+    <button type="button" class="btn btn-primary btn-lg btn-block">Información</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Vacunación Covid</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Recomendaciones para la Salud</button>
+    
+  </div>
+  <div class="columna">
+    <button type="button" class="btn btn-primary btn-lg btn-block">Recomendaciones</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Cuando ir al Médico</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Mitos y Realidades</button>
+  </div>
 </section>
+
+
+
+
+
+  <div class="MainContainer">
+<div class="item"> Imagen </div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magni vero voluptatum quisquam architecto, veniam delectus est voluptas. Obcaecati eligendi eos a, in iure tempore voluptates vitae sequi eaque temporibus.</div>
+    <div class="item">
+      
+      <button type="button" class="btn btn-primary btn-lg btn-block">Semáforo</button>
+    </div>
+  </div>
+    
+
+  
+
+
