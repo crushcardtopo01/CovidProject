@@ -5,16 +5,20 @@
             <span aria-hidden="true">x</span>
         </button>
     </div>
-    <div class="modal-body">
-        <p> </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/iLYXdTE8v-I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Zv4PX4pewRY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/4UkxqzH9kjY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="modal-body ">
+        <p>Si la COVID-19 se propaga en su comunidad, manténgase seguro mediante la adopción de algunas sencillas medidas de precaución, por ejemplo, mantener el distanciamiento físico, llevar mascarilla, ventilar bien las habitaciones, evitar las aglomeraciones, lavarse las manos y, al toser, cubrirse la boca y la nariz con el codo flexionado o con un pañuelo. Consulte las recomendaciones locales del lugar en el que vive y trabaja.</p>
+        <hr>
+        <h5>Colocarse correctamente el cubrebocas</h5>
+        <iframe width="50%" height="50%" style="margin-left: 25%;" src="https://www.youtube.com/embed/iLYXdTE8v-I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h5>Cuando  utilizar el cubrebocas en interiores</h5>
+        <iframe width="50%" height="50%" style="margin-left: 25%;" src="https://www.youtube.com/embed/Zv4PX4pewRY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h5>Utilizar gel al colocar y retirar el cubrebocas </h5>
+        <iframe width="50%" height="50%" style="margin-left: 25%;" src="https://www.youtube.com/embed/4UkxqzH9kjY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
     </div>
     <div class="modal-footer">
-        <button class="button">Salir</button>
+        <button class="btn btn-danger" (click) = "modal.close()">Salir</button>
     </div>
 </ng-template>
 
-<button type="button" class="btn btn-primary btn-lg btn-block" (click) = "openModalRecomendaciones(contenido)">Recomendaciones</button>
+<button style="margin-top: 20px; margin-bottom: 20px;" type="button" class="btn btn-primary btn-lg btn-block boton-top" (click) = "openModalRecomendaciones(contenido)">Recomendaciones</button>
