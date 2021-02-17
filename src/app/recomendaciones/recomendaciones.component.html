@@ -1,1 +1,20 @@
-<p>recomendaciones works!</p>
+<ng-template #contenido let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Recomendaciones</h4>
+        <button class="close" aria-label="close" type="button" (click) = 'modal.dismiss()'>
+            <span aria-hidden="true">x</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <p> </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iLYXdTE8v-I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Zv4PX4pewRY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4UkxqzH9kjY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    </div>
+    <div class="modal-footer">
+        <button class="button">Salir</button>
+    </div>
+</ng-template>
+
+<button type="button" class="btn btn-primary btn-lg btn-block" (click) = "openModalRecomendaciones(contenido)">Recomendaciones</button>

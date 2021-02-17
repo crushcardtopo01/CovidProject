@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-recomendaciones',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecomendacionesComponent implements OnInit {
 
-  constructor() { }
+  constructor(public modal:NgbModal) { }
 
   ngOnInit(): void {
+  }
+
+  openModalRecomendaciones(contenido){
+    this.modal.open(contenido,{size:'xl',scrollable:true});
+
+
   }
 
 }
