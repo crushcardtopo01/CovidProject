@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-visitar-medico',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VisitarMedicoComponent implements OnInit {
 
-  constructor() { }
+  constructor(public modal:NgbModal) { }
 
   ngOnInit(): void {
+  }
+
+  openModal(contenido){
+    this.modal.open(contenido,{size:'xl',scrollable:true});
+
+
   }
 
 }

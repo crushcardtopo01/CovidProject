@@ -1,1 +1,78 @@
-<button type="button" class="btn btn-primary btn-lg btn-block">Cuando ir al Médico</button>
+<ng-template #contenido let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">¿Cuando acudir a un médico?</h4>
+        <button class="close" aria-label="close" type="button" (click) = 'modal.dismiss()'>
+            <span aria-hidden="true">x</span>
+        </button>
+    </div>
+    <div class="modal-body ">
+        <p>Una persona debe sospechar de COVID-19 cuando presenta al menos dos de los siguientes síntomas</p>
+        
+
+        <div class="row">
+            <div class="col">
+                <p>Tos o estornudos </p>
+            </div>
+            <div class="col">
+                <img height="70%" src="assets/images/tos.png">
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="col">
+                    <p>Fiebre</p>
+                </div>
+                <div class="col">
+                    
+                    <img height="70%" src="assets/images/fiebre.png">
+                </div>
+            </div>
+        
+
+            <div class="row">
+                <div class="col">
+
+                    <p>Dolor de cabeza</p>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Dificultad para respirar (Casos mas  graves)</p>
+                </div>
+                <div class="col"></div>
+            </div>
+        
+            <div class="row">
+                <div class="col">
+                    <p>Dolor de Garganta</p>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Escurrimiento nasal</p>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Ojos rojos</p>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Dolor en musculos o articulaciones</p>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        
+   
+    <div class="modal-footer">
+        <button class="btn btn-danger" (click) = "modal.close()">Salir</button>
+    </div>
+</ng-template>
+
+<button style="margin-top: 20px; margin-bottom: 20px;" type="button" class="btn btn-primary btn-lg btn-block" (click) = "openModal(contenido)">Cuando ir al Médico</button>
