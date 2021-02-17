@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalComponent } from './modal/modal.component';
 import { RecomendacionesComponent } from './recomendaciones/recomendaciones.component';
+import { InformacionComponent } from './informacion/informacion.component';
+import { VacunacionComponent } from './vacunacion/vacunacion.component';
+import { VisitarMedicoComponent } from './visitar-medico/visitar-medico.component';
+import { MitosComponent } from './mitos/mitos.component';
 
 
 @NgModule({
@@ -13,7 +17,11 @@ import { RecomendacionesComponent } from './recomendaciones/recomendaciones.comp
     AppComponent,
     ModalComponent,
     ModalComponent,
-    RecomendacionesComponent
+    RecomendacionesComponent,
+    InformacionComponent,
+    VacunacionComponent,
+    VisitarMedicoComponent,
+    MitosComponent
   ],
   imports: [
     BrowserModule,
