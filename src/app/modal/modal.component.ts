@@ -24,15 +24,17 @@ export class ModalComponent implements OnInit {
 
     console.log("ngOnInit()"); 
     this.http.get<any>(this.url).subscribe(data => {
+      
+      this.totalAngularPackages = data;
+      console.log("onSubmit(): this.totalAngularPackages: "+this.totalAngularPackages);
       debugger;
-       this.totalAngularPackages = data.total;
     },error => this.error = error); 
     
   }
 
   onSubmit() { // <----
     console.log("onSubmit(): this.totalAngularPackages: "+this.totalAngularPackages);
-    debugger;
+    
   }
 
 

@@ -8,7 +8,11 @@
         </button>
     </div>
     <div class="modal-body">
-        <p>Seleccione el estado</p>
+
+        <div *ngFor = "let item of totalAngularPackages">
+            {{item.nombre}}
+        </div>
+       
     </div>
     <div class="modal-footer">
         <button class="button">Salir</button>
