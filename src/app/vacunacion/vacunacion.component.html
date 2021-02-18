@@ -1,1 +1,25 @@
-<button style="margin-top: 20px; margin-bottom: 20px;" type="button" class="btn btn-primary btn-lg btn-block">Vacunación Covid</button>
+<ng-template #contenido let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Vacunación Covid</h4>
+        <button class="close" aria-label="close" type="button" (click) = 'modal.dismiss()'>
+            <span aria-hidden="true">x</span>
+        </button>
+    </div>
+    <div class="modal-body ">
+
+        <div class="alert alert-info" role="alert">
+           <p>Sin las vacunas, las epidemias causadas por muchas enfermedades prevenibles podrían reaparecer y llevar a un aumento en el número de casos por enfermedad, discapacidad y muertes.</p>
+        </div>
+        <app-acordion></app-acordion>
+        
+        
+
+        
+        </div>
+        
+    <div class="modal-footer">
+        <button class="btn btn-danger" (click) = "modal.close()">Salir</button>
+    </div>
+</ng-template>
+
+<button style="margin-top: 20px; margin-bottom: 20px;" type="button" class="btn btn-primary btn-lg btn-block" (click) = 'openModal(contenido)'>Vacunación Covid</button>

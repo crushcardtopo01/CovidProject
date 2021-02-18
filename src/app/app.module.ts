@@ -13,6 +13,7 @@ import { VacunacionComponent } from './vacunacion/vacunacion.component';
 import { VisitarMedicoComponent } from './visitar-medico/visitar-medico.component';
 import { MitosComponent } from './mitos/mitos.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
+import { AcordionComponent } from './acordion/acordion.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { CarruselComponent } from './carrusel/carrusel.component';
     VacunacionComponent,
     VisitarMedicoComponent,
     MitosComponent,
-    CarruselComponent
+    CarruselComponent,
+    AcordionComponent
   ],
   imports: [
     BrowserModule,
