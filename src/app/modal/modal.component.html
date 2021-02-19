@@ -11,7 +11,8 @@
         <div class="row">
             <div class="col-6" *ngFor = "let item of totalAngularPackages">
 
-                <div *ngIf="item.color == 'verde' " class="card text-white bg-success mb-3" style="width: 18rem;">
+                <div *ngIf="item.color == 'verde' " class="card text-center text-white bg-success mb-3 w-100"  style="width: 18rem;">
+                    <h5 class="card-header">{{item.nombre}}</h5>
 
                     <div class="card-body">
                         <h5 class="card-title">{{item.nombre}}</h5>
@@ -22,10 +23,11 @@
                         </div>
                 
                 </div>
-                <div *ngIf="item.color == 'amarillo' " class="card text-white bg-warning mb-3" style="width: 18rem;">
+                <div *ngIf="item.color == 'amarillo' " class="card text-center text-white bg-warning mb-3 w-100" style="width: 18rem;">
+                    <h5 class="card-header">{{item.nombre}}</h5>
 
                     <div class="card-body">
-                        <h5 class="card-title">{{item.nombre}}</h5>
+                        
                         <p class="card-text">Color de Semaforo: {{item.color}}</p>
                         <p>Recomendaciones:</p>
                         <p>Casos Activos:</p>
@@ -33,10 +35,11 @@
                         </div>
                 
                 </div>
-                <div style="" *ngIf="item.color == 'naranja' " class="card text-white mb-3" style="width: 18rem; background-color: orangered !important;">
+                <div  *ngIf="item.color == 'naranja' " class="card text-center text-white mb-3 w-100" style="width: 18rem; background-color: orangered !important;">
+                    <h5 class="card-header">{{item.nombre}}</h5>
 
                     <div class="card-body">
-                        <h5 class="card-title">{{item.nombre}}</h5>
+                    
                         <p class="card-text">Color de Semaforo: {{item.color}}</p>
                         <p>Recomendaciones:</p>
                         <p>Casos Activos:</p>
@@ -44,7 +47,7 @@
                         </div>
                 
                 </div>
-                <div *ngIf="item.color == 'rojo' " class="card text-white bg-danger mb-3" style="width: 18rem;">
+                <div *ngIf="item.color == 'rojo' " class="card text-center text-white bg-danger mb-3 w-100" style="width: 18rem;">
 
                     <div class="card-body">
                         <h5 class="card-title">{{item.nombre}}</h5>
