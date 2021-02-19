@@ -1,6 +1,5 @@
 <ng-template #contenido let-modal>
 
-    <button (click) = 'onSubmit()'> aqui</button>
     <div class="modal-header">
         <h4 class="modal-title">Semáforo Covid</h4>
         <button class="close" aria-label="close" type="button" (click) = 'modal.dismiss()'>
@@ -9,10 +8,21 @@
     </div>
     <div class="modal-body">
 
-        <div *ngFor = "let item of totalAngularPackages">
-            {{item.nombre}}
+        <div class="row">
+            <div class="col-12" *ngFor = "let item of totalAngularPackages">
+                <div  class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">{{item.nombre}}</h5>
+                    <p class="card-text">Color de Semaforo: {{item.color}}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <hr><br>
+            </div>
         </div>
-       
+
+
     </div>
     <div class="modal-footer">
         <button class="button">Salir</button>
