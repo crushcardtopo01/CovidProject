@@ -32,9 +32,10 @@ export class ModalComponent implements OnInit {
     
   }
 
-  onSubmit() { // <----
-    console.log("onSubmit(): this.totalAngularPackages: "+this.totalAngularPackages);
-    
+  openModal(contenido){
+    this.modal.open(contenido,{size:'xl',scrollable:true});
+
+
   }
 
 
